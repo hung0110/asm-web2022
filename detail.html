@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    detail
+    <div class="container max-w-5xl mx-auto">
+        <header class="grid grid-cols-1 md:grid-cols-3 mb-20">
+            <div>
+                <span><a class="font-bold text-2xl" href="">Fudo.</a></span>
+            </div>
+            <div>
+                <ul class="flex space-x-5">
+                    <li><a class="text-red-500" href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex space-x-2 justify-end">
+                <div class="inline-block"><img class="" src="./img/Cart.png" alt=""></div>
+                <button class="border-2 border-red-500 rounded-md text-red-500 p-2">Sign In</button>
+                <button class="border rounded-md border-red-500 bg-red-500 text-white p-2">Sign
+                    Up</button>
+            </div>
+        </header>
+        <div class="titile grid grid-cols-1 md:grid-cols-2 gap-9 mb-10">
+            <div class="">
+                <h2 class="font-bold text-3xl mb-5">Big and Juicy Wagyu Beef Cheeseburger</h2>
+                <span class="font-bold text-red-500 text-3xl mb-5 block">$30</span>
+                <p class="mb-5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <form action="">
+                    <input class="border border-gray-300 rounded-md py-2 px-4" type="text"
+                        placeholder="Enter subject...">
+                    <button class="bg-black text-white py-2 px-2 rounded-md ml-2">Add To Cart</button>
+                </form>
+            </div>
+            <div>
+                <img src="./img2/anh1.png" alt="">
+            </div>
+        </div>
+        <div class="product mb-20">
+            <h2 class="font-bold text-2xl mb-5">Related Products</h2>
+            <div class="row grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="mb-5"><img src="./img2/anh2.png" alt=""></div>
+                    <h3 class="font-bold mb-5">Fresh and Healthy Mixed Mayonnaise Salad</h3>
+                    <span class="block mb-5 text-red-500 font-bold">$30</span>
+                    <div><button class="bg-black text-white py-2 w-full rounded-md">Add To Cart</button></div>
+                </div>
+                <div>
+                    <div class="mb-5"><img src="./img2/anh3.png" alt=""></div>
+                    <h3 class="font-bold mb-5">Fresh and Healthy Mixed Mayonnaise Salad</h3>
+                    <span class="block mb-5 text-red-500 font-bold">$30</span>
+                    <div><button class="bg-black text-white py-2 w-full rounded-md">Add To Cart</button></div>
+                </div>
+                <div>
+                    <div class="mb-5"><img src="./img2/anh4.png" alt=""></div>
+                    <h3 class="font-bold mb-5">Fresh and Healthy Mixed Mayonnaise Salad</h3>
+                    <span class="block mb-5 text-red-500 font-bold">$30</span>
+                    <div><button class="bg-black text-white py-2 w-full rounded-md">Add To Cart</button></div>
+                </div>
+            </div>
+        </div>
+        <footer class="border-t-2 mb-10 flex justify-between">
+            <div class="mt-5">
+                <span><a class="font-bold text-2xl" href="">Fudo.</a></span>
+            </div>
+            <ul class="flex space-x-5 mt-5">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
+
 </html>

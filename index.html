@@ -2,18 +2,195 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
-  <a href="./home.html">Trang chủ</a>
-  <a href="./detail.html">Chi tiết sản phẩm</a>
-  <a href="./products.html">Sản phẩm</a>
-  <div id="app"></div>
-  <script type="module" src="./javascript/bien.js"></script>
+    <div class="container max-w-5xl mx-auto">
+        <header class="grid grid-cols-1 md:grid-cols-3 mb-10">
+            <div>
+                <span><a class="font-bold text-2xl" href="">Fudo.</a></span>
+            </div>
+            <div>
+                <ul class="flex space-x-5">
+                    <li><a class="text-red-500" href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex space-x-2 justify-end">
+                <div class="inline-block"><img class="" src="./img/Cart.png" alt=""></div>
+                <button class="border-2 border-red-500 rounded-md text-red-500 p-2">Sign In</button>
+                <button class="border rounded-md border-red-500 bg-red-500 text-white p-2">Sign
+                    Up</button>
+            </div>
+        </header>
+        <div class="flex grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 mb-20">
+            <div class="w-full">
+                <span
+                    class="border-1 border-red-100 bg-red-100 text-red-500 py-2 px-3 font-bold rounded-md inline-block mb-8">Quality
+                    Food</span>
+                <h2 class="font-bold text-7xl mb-10">Fastest
+                    <span class="text-red-500">Delivery</span>
+                    & Easy
+                    <span class="text-red-500">Pickup</span>
+                </h2>
+                <p class="mb-8">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in
+                    60 minutes.</p>
+                <form action="">
+                    <input class="border-2 border-red-200 rounded-md py-2 px-5" type="">
+                    <button
+                        class="border-2 border-red-200 bg-red-500 rounded-md -mx-2 text-white py-2 px-6">Discover</button>
+                </form>
+            </div>
+            <div>
+                <img src="./img/Images1.png" alt="" class="banner max-w-full">
+            </div>
+            <div></div>
+        </div>
+        <div>
+            <div class="text-center mb-20">
+                <h2 class="font-bold text-4xl mb-10">Our Popular Dishes</h2>
+                <span class="inline-block text-1xl px-40">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</span>
+            </div>
+            <div class="rows grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-20">
+                <div class="column1 ">
+                    <div class="mb-5"><img src="./img/image 26.png" alt=""></div>
+                    <div>
+                        <h3 class="font-bold text-red-500 text-1xl mb-10">Big and Juicy Wagyu Beef Cheeseburger</h3>
+                        <span class="mx-10">30 Minutes</span><span>Snack</span>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div class="mb-5"><img src="./img/image 26 (1).png" alt=""></div>
+                    <div>
+                        <h3 class="font-bold text-red-500 text-1xl mb-10">Fresh Lime Roasted Salmon</h3>
+                        <span class="mx-10">30 Minutes</span><span>Snack</span>
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="mb-5"><img src="./img/Mask Group.png" alt=""></div>
+                    <div>
+                        <h3 class="font-bold text-red-500 text-1xl mb-10">The Best Easy One Pot Chicken and Rice</h3>
+                        <span class="mx-10">30 Minutes</span><span>Snack</span>
+                    </div>
+                </div>
+                <div class="column4">
+                    <div class="mb-10"><img src="./img/Mask Group (1).png" alt=""></div>
+                    <div>
+                        <h3 class="font-bold text-red-500 text-1xl mb-5">Fresh and Healthy Mixed Mayonnaise </h3>
+                        <span class="mx-10">30 Minutes</span><span>Snack</span>
+                    </div>
+                </div>
+                <div class="column4">
+                    <div class="mb-10"><img src="./img/Mask Group (2).png" alt=""></div>
+                    <div>
+                        <h3 class="font-bold text-red-500 text-1xl mb-5">The Creamiest Creamy Chicken</h3>
+                        <span class="mx-10">30 Minutes</span><span>Snack</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="mb-10"><img src="./img/Mask Group (3).png" alt=""></div>
+                    <div>
+                        <h3 class="font-bold text-red-500 text-1xl mb-5">Fruity Pancake with Orange & Blueberry</h3>
+                        <span class="mx-10">30 Minutes</span><span>Snack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-between mb-20">
+                <h2 class="font-bold text-4xl">Categories</h2>
+                <button class="border-2 border-red-500 p-3 text-red-500">View All Categories</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-10 mx-10 mb-20">
+                <div class="justify-center items-center">
+                    <div class="mb-5"><img src="./img/image 25.png" alt=""></div>
+                    <h3><a class="font-bold" href="">Breakfast</a></h3>
+                </div>
+                <div>
+                    <div class="mb-5"><img src="./img/image 20 (1).png" alt=""></div>
+                    <h3><a class="font-bold" href="">Breakfast</a></h3>
+                </div>
+                <div>
+                    <div class=""><img src="./img/Group 891.png" alt=""></div>
+                    <h3><a class="font-bold" href="">Breakfast</a></h3>
+                </div>
+                <div>
+                    <div class="mb-5"><img src="./img/image 22.png" alt=""></div>
+                    <h3><a class="font-bold" href="">Dessert</a></h3>
+                </div>
+                <div>
+                    <div><img src="./img/Group 893.png" alt=""></div>
+                    <h3><a class="font-bold" href="">Breakfast</a></h3>
+                </div>
+                <div>
+                    <div><img src="./img/Group 894.png" alt=""></div>
+                    <h3><a class="font-bold" href="">Breakfast</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mb-20">
+            <div class="contact-us-heading mb-10">
+                <h2 class="font-bold text-4xl text-center">Contact us</h2>
+            </div>
+            <form action="">
+                <div class="grid grid-cols-2 gap-8 mb-10">
+                    <div class="contact-us-item">
+                        <label for="name" class="block uppercase mb-2 text-gray-400">Name</label>
+                        <input type="text" id="name" class="block p-3 border w-full" placeholder="Enter your name...">
+                    </div>
+                    <!--End .contact-us-item-->
+                    <div class="contact-us-item">
+                        <label for="email" class="block uppercase mb-2 text-gray-400">emAIL aDDRESS</label>
+                        <input type="text" id="email" class="block p-3 border w-full"
+                            placeholder="Your email address...">
+                    </div>
+                    <!--End .contact-us-item-->
+                    <div class="contact-us-item">
+                        <label for="Subject" class="block uppercase mb-2 text-gray-400">Subject</label>
+                        <input type="text" id="Subject" class="block p-3 border w-full" placeholder="Enter subject...">
+                    </div>
+                    <!--End .contact-us-item-->
+                    <div class="contact-us-item">
+                        <label for="ENquiry type" class="block uppercase mb-2 text-gray-400">ENquiry type</label>
+                        <select class="block p-3 border w-full" name="" id="ENquiry type">
+                            <option class="text-gray-400" value="">Advertising</option>
+                        </select>
+                    </div>
+                    <!--End .contact-us-item-->
+                    <div class="contact-us-item col-span-2">
+                        <label for="messages" class="block uppercase mb-2 text-gray-400">MEssages</label>
+                        <textarea name="" id="messages" cols="30" rows="7" placeholder="Enter your messages..."
+                            class="border w-full p-5"></textarea>
+                    </div>
+                    <!--End .contact-us-item-->
+                </div>
+                <div class="text-center">
+                    <button class="border-2 border-black bg-black text-white px-10 py-3 rounded-md">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="border-t-2 mb-10 flex justify-between">
+            <div class="mt-5">
+                <span><a class="font-bold text-2xl" href="">Fudo.</a></span>
+            </div>
+            <ul class="flex space-x-5 mt-5">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Ua</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>

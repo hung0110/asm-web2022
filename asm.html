@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header class="max-w-5xl mx-auto pt-10 mb-20">
+        <div class="menu mb-20 ">
+            <ul class="flex space-x-5 inline text-center text-2xl font-bold place-content-end">
+                <li><a href="">Works</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <h2 class="font-bold text-3xl mb-5">Hi, I am John,
+                    <span class="block mt-2">Creative Technologist</span>
+                </h2>
+                <p class="mb-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                    consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="border bg-red-500 text-white py-2 px-3">Download Resume</button>
+            </div>
+            <div class="flex justify-end"><img class="w-1/2" src="./src/img/Ellipse1.png" alt=""></div>
+        </div>
+    </header>
+    <section class="mb-10 bg-[#EDF7FA] py-10">
+        <div class="max-w-5xl mx-auto flex justify-between mb-10 ">
+            <h2 class="text-2xl">Recent posts</h2>
+            <span class="text-blue-400"><a href="">View all</a></span>
+        </div>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-5">
+                <h3 class="font-bold text-2xl mb-5">Making a design system from scratch</h3>
+                <div class="mb-5">
+                    <span class="border-r-2 border-black pr-11 mr-9 ">12 Feb 2020</span>
+                    <span class="">Design, Pattern</span>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="bg-white p-5">
+                <h3 class="font-bold text-2xl mb-5">Creating pixel perfect icons in Figma</h3>
+                <div class="mb-5">
+                    <span class="border-r-2 border-black pr-11 mr-9 ">12 Feb 2020</span>
+                    <span class="">Figma, Icon Design</span>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="border-b-2 max-w-5xl mx-auto pb-10 mb-20">
+        <h2 class="text-2xl mb-10">Featured works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-[250px,auto] gap-5 mb-10">
+            <div class=""><img class="w-72" src="./src/img/Rectangle 30.png" alt=""></div>
+            <div>
+                <h3 class="font-bold text-2xl mb-5">Designing Dashboards</h3>
+                <span class="bg-black text-white font-bold rounded-md p-1 mr-10">2020</span>
+                <span class="text-gray-500">Dashboard</span>
+                <p class="mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-[250px,auto] gap-5 mb-10">
+            <div class=""><img class="w-72" src="./src/img/Rectangle 32.png" alt=""></div>
+            <div>
+                <h3 class="font-bold text-2xl mb-5">Designing Dashboards</h3>
+                <span class="bg-black text-white font-bold rounded-md p-1 mr-10">2018</span>
+                <span class="text-gray-500">Illustration</span>
+                <p class="mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-[250px,auto] gap-5">
+            <div class=""><img class="w-72" src="./src/img/Rectangle 34.png" alt=""></div>
+            <div>
+                <h3 class="font-bold text-2xl mb-5">Designing Dashboards</h3>
+                <span class="bg-black text-white font-bold rounded-md p-1 mr-10">2018</span>
+                <span class="text-gray-500">Typography</span>
+                <p class="mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="max-w-5xl mx-auto text-center mb-20">
+        <div class="flex space-x-8 justify-center mb-5">
+            <div><img src="./src/img/fb.png" alt=""></div>
+            <div><img src="./src/img/insta.png" alt=""></div>
+            <div><img src="./src/img/Group.png" alt=""></div>
+            <div><img src="./src/img/Linkedin.png" alt=""></div>
+        </div>
+        Copyright ©2020 All rights reserved 
+    </footer>
 </body>
+
 </html>
